@@ -10,36 +10,169 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="Assets/img/icone.png" alt="logo">
+    <header class="layout-nav">
+
+        <div class="logo-img">
+            <img src="../Assets/img/icone.png" alt="logo">
             <h1>EcoVeritas</h1>
+
+        </div>
+        <div class="layout-pagrafo-nav">
+            <p class="paragrafo-nav">Transparência que transforma. </p>
         </div>
 
         <nav>
             <ul>
-                <a href="Inicio.html">
-                    <i class="fa-solid fa-house"></i>
-                    Início
-                </a>
 
-                <a href="avaliarEmpresas.html">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    Avaliar Empresa
-                </a>
+                <li><a href="Inicio.html" class="bnt-nav-ativo">
+                        <i class="fa-solid fa-house"></i>
+                        Início
+                    </a></li>
 
-                <a href="empresasCertificadas.html">
-                    <i class="fa-solid fa-medal"></i>
-                    Empresas Certificadas
-                </a>
 
-                <a href="sobre.html">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Sobre
-                </a>
+
+                <li><a href="avaliarEmpresas.html">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <span class="alinhar-paragrafo"> Avaliar Empresa</span>
+                    </a></li>
+
+
+                <li><a href="empresasCertificadas.html">
+                        <i class="fa-solid fa-medal"></i>
+                        <span class="arrumar-max">Empresas Certificadas</span>
+                    </a></li>
+
+
+                <li><a href="sobre.html">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Sobre
+                    </a></li>
+
             </ul>
         </nav>
+
+        <div class="container-estrita-nav">
+            <div class="layout-logo-escrita">
+                <img src="../Assets/img/iconeEscrita.png" alt="">
+                <h2>Juntos contra o greenwashing.</h2>
+            </div>
+            <p>Consumo consciente começa com informação confiável.</p>
+
+        </div>
     </header>
+    <main>
+        <section>
+            <div class="pesquisa-inicio">
+                <input type="text" placeholder="Busque por empresas, produtos ou categorias..."><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="Banner-eco-image">
+                <div class="Banner-eco-escrita">
+                    <h2>PLATAFORMA ECOVERITAS</h2>
+                    <h3>Transparência hoje,
+                        confiança sempre.</h3>
+                    <p>Combatemos o greenwashing e conectamos você a empresas que realmente fazem a diferença.</p>
+                    <div class="layout-btn-banner">
+                        <a href="avaliarEmpresas.html" class="btn-banner btn1">
+                            Avaliar Empresas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="" class="btn-banner btn2">Saiba Mais</a>
+                    </div>
+
+                </div>
+                <img src="../Assets/img/Globo-inicio.png" alt="Globo">
+            </div>
+        </section>
+        <section class="comoFuncionaSection">
+
+            <h3 class="comoFunciona">Como funciona?</h3>
+
+            <div class="cardsInicio">
+
+                <div class="cards">
+
+                    <div class="iconeGrande">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="tituloCard">
+                        <span class="numero">1</span>
+                        <h4>Pesquise</h4>
+                    </div>
+
+                    <p>Busque empresas ou <br> produtos que você quer <br>avaliar.</p>
+                </div>
+
+                <div class="cards">
+
+                    <div class="iconeGrande">
+                        <i class="fa-regular fa-clipboard"></i>
+                    </div>
+
+                    <div class="tituloCard">
+                        <span class="numero">2</span>
+                        <h4>Avalie</h4>
+                    </div>
+
+                    <p>Responda nosso questionário <br> ambiental.</p>
+                </div>
+
+                <div class="cards">
+
+                    <div class="iconeGrande">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div class="tituloCard">
+                        <span class="numero">3</span>
+                        <h4>Analisamos</h4>
+                    </div>
+
+                    <p>Nossos especialistas <br> analisam os dados <br>eticamente.</p>
+                </div>
+
+                <div class="cards">
+
+                    <div class="iconeGrande">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div class="tituloCard">
+                        <span class="numero">4</span>
+                        <h4>Avalie</h4>
+                    </div>
+
+                    <p>Empresas aprovadas <br> recebem o Selo <br>EcoVeritas.</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="empresasDestaqueSection">
+
+            <h3 class="empresasDestaque">Empresas em destaque</h3>
+
+            <div class="cardsInicioEmpresas">
+
+                <div class="cardNatura">
+
+                    <div class="logoEmpresa">
+                        <img src="../Assets/img/Natura.png" alt="Logo da empresa Natura">
+                    </div>
+
+                    <p class="categoriaEmpresa">Cosméticos</p>
+
+                    <div class="avaliaçao">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Excelente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

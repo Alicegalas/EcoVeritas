@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, 'sans-serif';
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 19.79px;
+    font-weight: 600;
+}
+
+.layout-nav {
+    background-color: #063d1d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    padding: 32px 24px;
+
+}
+
+.logo-img {
+    display: flex;
+    gap: 8px;
+
+}
+
+.logo-img img {
+    width: 32px;
+    height: 32px;
+    margin: -2px;
+}
+
+.layout-pagrafo-nav {
+    margin-top: 19px;
+}
+
+.paragrafo-nav {
+    color: #D9E3D6;
+    font-size: 14px;
+    max-width: 150px;
+    line-height: 20px;
+}
+
+nav {
+    margin: 30px 24px 24px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.2px;
+    transition: 0.3s ease;
+}
+
+.fa-medal,
+.fa-house,
+.fa-clipboard-check,
+.fa-circle-info {
+    font-size: 16px;
+}
+
+.fa-clipboard-check {
+    margin-left: 2px;
+}
+
+.alinhar-paragrafo {
+    position: relative;
+    left: 3px;
+}
+
+nav a.bnt-nav-ativo {
+    background-color: #4B7A3B;
+    padding: 12px 18px;
+    gap: 10px;
+    width: 210px;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+
+nav a:hover {
+    background-color: #4B7A3B;
+    padding: 12px 18px;
+    width: 210px;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+
+.layout-logo-escrita {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+}
+
+.layout-logo-escrita h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #D9E3D6;
+
+}
+
+.container-estrita-nav p {
+    color: #D9E3D6;
+    font-size: 14px;
+}
+
+.layout-logo-escrita img {
+    width: 24px;
+    height: 24px;
+}
+
+.container-estrita-nav {
+    background-color: #1E3B1A;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 137px;
+}
+
+main {
+    margin-left: 280px;
+}
+
+.pesquisa-inicio {
+    display: flex;
+    margin-left: 44px;
+    margin-top: 32px;
+}
+
+.pesquisa-inicio input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.pesquisa-inicio i {
+    position: absolute;
+    left: 695px;
+    top: 44px;
+    color: #0B2E13;
+}
+
+.Banner-eco-image {
+    width: 920px;
+    height: 240px;
+    background-color: #EAF1E7;
+    margin-top: 32px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    margin-left: 40px;
+}
+
+.Banner-eco-image img {
+    position: relative;
+    left: 40px;
+}
+
+.Banner-eco-escrita {
+    display: flex;
+    flex-direction: column;
+}
+
+.Banner-eco-escrita h2 {
+    font-size: 12px;
+    color: #0B2E13;
+    position: relative;
+    top: -20px;
+}
+
+.Banner-eco-escrita h3 {
+    color: #0B2E13;
+    font-size: 30px;
+    position: relative;
+    bottom: 12px;
+
+}
+
+.Banner-eco-escrita p {
+    font-size: 14px;
+    color: #0B2E13;
+    width: 350px;
+    max-width: 100%;
+
+}
+
+a.btn-banner {
+    display: inline-block;
+    gap: 20px;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+a.btn1{
+    background-color: #0B2E13;
+    color: #fff;
+    transition: 0.3s ease;
+}
+a.btn1 i{
+    position: relative;
+    left: 2px;
+    top: 1px;
+    
+} 
+
+
+a.btn2{
+color: #0B2E13;
+border: 1px solid #0B2E13;
+transition: 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+a.btn2:hover{
+background-color: #4B7A3B;
+color: #fff;
+ transform: translateY(-4px);
+}
+
+a.btn1:hover{
+    background-color:#4B7A3B;
+   
+    transform: translateY(-4px);
+}
+
+
+
+
+.comoFuncionaSection{
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.comoFunciona {
+    font-size: 18px;
+    color: #0e3f1a;
+    margin-bottom: 20px;
+}
+
+.cardsInicio {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    background-color: white;
+    width: 202px;
+    height: 208px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #d4dfd2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards p {
+    max-width: 230px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #0B2E13;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+
+
+
+.iconeGrande {
+    width: 40px;
+    height: 40px;
+    background-color: #e8efe5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.iconeGrande i {
+    font-size: 18px;
+    color: #0B2E13;
+}
+
+.tituloCard {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tituloCard h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #0B2E13;
+}
+
+.numero {
+    width: 24px;
+    height: 24px;
+    background-color: #0B2E13;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/*Empresas*/
+
+.empresasDestaqueSection {
+margin-left: 45px;
+    margin-top: 32px;
+}
+
+.empresasDestaque {
+    font-size: 18px;
+    color: #0B2E13;
+    margin-bottom: 10px;
+   align-items: center;
+   margin-left: 10px;
+   margin-bottom: 20px;
+}
+
+.cardsInicioEmpresas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.cardNatura {
+    width: 300px;
+    height: 220px;
+
+    background-color: white;
+
+    border: 2px solid #d4dfd2;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+.logoEmpresa {
+    width: 130px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+.logoEmpresa img {
+    width: 120px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.categoriaEmpresa {
+    margin: 0 0 20px 0;
+
+    font-size: 18px;
+    color: #0B2E13;
+
+    text-align: center;
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background-color: #dce6d8;
+    color: #4f7d40;
+
+    padding: 10px 25px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.avaliacao i {
+    font-size: 20px;
+}
