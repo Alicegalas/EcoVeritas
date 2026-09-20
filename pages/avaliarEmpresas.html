@@ -1,195 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../Assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
     <title>EcoVeritas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="layout-nav">
+      <div class="logo-img">
+        <img src="../Assets/img/icone.png" alt="logo" />
+        <h1>EcoVeritas</h1>
+      </div>
+      <div class="layout-pagrafo-nav">
+        <p class="paragrafo-nav">Transparência que transforma.</p>
+      </div>
 
-        <div class="logo-img">
-            <img src="../Assets/img/icone.png" alt="logo">
-            <h1>EcoVeritas</h1>
-        </div>
-        <div class="layout-pagrafo-nav">
-            <p class="paragrafo-nav">Transparência que transforma.</p>
-        </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="Inicio.html">
+              <i class="fa-solid fa-house"></i>
+              Início
+            </a>
+          </li>
+          <li>
+            <a href="avaliarEmpresas.html" class="bnt-nav-ativo">
+              <i class="fa-solid fa-clipboard-check"></i>
+              <span class="alinhar-paragrafo"> Avaliar Empresa</span>
+            </a>
+          </li>
+          <li>
+            <a href="empresasCertificadas.html">
+              <i class="fa-solid fa-medal"></i>
+              <span class="arrumar-max">Empresas Certificadas</span>
+            </a>
+          </li>
+          <li>
+            <a href="sobre.html">
+              <i class="fa-solid fa-circle-info"></i>
+              Sobre
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav>
-            <ul>
-                <li><a href="Inicio.html">
-                        <i class="fa-solid fa-house"></i>
-                        Início
-                    </a></li>
-                <li><a href="avaliarEmpresas.html" class="bnt-nav-ativo">
-                        <i class="fa-solid fa-clipboard-check"></i>
-                        <span class="alinhar-paragrafo"> Avaliar Empresa</span>
-                    </a></li>
-                <li><a href="empresasCertificadas.html">
-                        <i class="fa-solid fa-medal"></i>
-                        <span class="arrumar-max">Empresas Certificadas</span>
-                    </a></li>
-                <li><a href="sobre.html">
-                        <i class="fa-solid fa-circle-info"></i>
-                        Sobre
-                    </a></li>
-            </ul>
-        </nav>
-
-        <div class="container-estrita-nav">
-            <div class="layout-logo-escrita">
-                <img src="../Assets/img/iconeEscrita.png" alt="">
-                <h2>Juntos contra o greenwashing.</h2>
-            </div>
-            <p>Consumo consciente começa com informação confiável.</p>
+      <div class="container-estrita-nav">
+        <div class="layout-logo-escrita">
+          <img src="../Assets/img/iconeEscrita.png" alt="" />
+          <h2>Juntos contra o greenwashing.</h2>
         </div>
+        <p>Consumo consciente começa com informação confiável.</p>
+      </div>
     </header>
 
     <main>
-        <section class="avaliarEmpresa">
+      <section class="avaliarEmpresa">
+        <div class="pesquisa-inicio">
+          <input
+            type="text"
+            placeholder="Busque por empresas, produtos ou categorias..."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
 
-            <div class="pesquisa-inicio">
-                <input type="text" placeholder="Busque por empresas, produtos ou categorias...">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="bloco-banner-avaliacao escondido">
+          <div class="conteudo-banner">
+            <div class="texto-banner">
+              <a href="Inicio.html" class="link-voltar"
+                ><i class="fa-solid fa-arrow-left"></i>Voltar</a
+              >
+              <h2>Avaliar empresa</h2>
+              <p>
+                Sua Avaliação ajuda outros consumidores a fazerem escolhas mais
+                conscientes e fortalece a ransparência das empresas
+              </p>
+            </div>
+          </div>
+          <img
+            src="../Assets/img/Globo-inicio.png"
+            alt="Icone sustentabilidade"
+          />
+        </div>
+
+        <div class="buscar-alvo escondido">
+          <div class="grupo-input-buscar">
+            <input
+              type="text"
+              id="nomeEmpresa"
+              placeholder="Digite o nome da empresa"
+            />
+            <button type="button" class="btn-button">Buscar</button>
+          </div>
+        </div>
+
+        <div class="bloco-card-empresa escondido">
+          <div class="perfil-empresa">
+            <div class="foto-empresa">
+              <img src="../Assets/img/Natura.png" alt="" />
+            </div>
+            <div class="bloco-principal-info-empresa">
+              <div class="info-empresa">
+                <h2>Natura Cosméticos</h2>
+                <p>Empresa verificada</p>
+              </div>
+              <div class="info-empresa-natura">
+                <h3>Beleza que cuida do mundo</h3>
+                <p>Cosméticos • Beleza • Sustentabilidade</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="#" class="link-detalhes">Ver mais detalhes</a>
+          </div>
+        </div>
+
+        <div class="bloco-avaliacoes-estrelas escondido">
+          <h3>Como foi sua experiência?</h3>
+          <p class="subtitulo-aval">
+            Avalie os principais atributos da empresa
+          </p>
+
+          <div class="grid-categorias">
+            <div class="categoria-item">
+              <div class="campo-icone">
+                <i class="fa-solid fa-leaf icone-cat"></i>
+              </div>
+              <p class="titulo-cat">Impacto Ambiental</p>
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="desc-cat">
+                Como a empresa contribui para o meio ambiente
+              </p>
             </div>
 
-           
-
-            <div class="bloco-banner-avaliacao escondido">
-               
-                <div class="conteudo-banner">
-                    <div class="texto-banner">
-                        <a href="Inicio.html" class="link-voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</a>
-                        <h2>Avaliar empresa</h2>
-                        <p>Sua Avaliação ajuda outros consumidores a fazerem escolhas mais conscientes e fortalece a ransparência das empresas</p>
-                    </div>
-                </div>
-                <img src="../Assets/img/Globo-inicio.png" alt="Icone sustentabilidade">
+            <div class="categoria-item">
+              <div class="campo-icone">
+                <i class="fa-solid fa-circle-check icone-cat"></i>
+              </div>
+              <p class="titulo-cat">Conduta Ética</p>
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="desc-cat">Transparência e respeito nas relações</p>
             </div>
 
-            <div class="buscar-alvo escondido">
-                <div class="grupo-input-buscar">
-                    <input type="text" id="nomeEmpresa" placeholder="Digite o nome da empresa">
-                    <button type="button" class="btn-button">Buscar</button>
-                </div>
+            <div class="categoria-item">
+              <div class="campo-icone">
+                <i class="fa-solid fa-users icone-cat"></i>
+              </div>
+              <p class="titulo-cat">Responsabilidade Social</p>
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="desc-cat">Apoio à comunidade e colaboradores</p>
             </div>
 
-            <div class="bloco-card-empresa escondido">
-                <div class="perfil-empresa">
-                    <div class="foto-empresa"><img src="../Assets/img/Natura.png" alt=""></div>
-                    <div class="info-empresa">
-                        <h2>Natura Cosméticos</h2>
-                        <p>Cosméticos ° Beleza ° Sustentabilidade</p>
-                    </div>
-                </div>
-                <a href="#" class="link-detalhes">Ver mais detalhes</a>
+            <div class="categoria-item">
+              <div class="campo-icone">
+                <i class="fa-solid fa-comment-dots icone-cat"></i>
+              </div>
+              <p class="titulo-cat">Qualidade dos Produtos/Serviços</p>
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="desc-cat">
+                Entrega do que promete com segurança e qualidade
+              </p>
             </div>
 
-            <div class="bloco-avaliacoes-estrelas escondido">
-                <h3>Como foi sua experiência?</h3>
-                <p class="subtitulo-aval">Avalie os principais atributos da empresa</p>
-
-                <div class="grid-categorias">
-
-                    <div class="categoria-item">
-                        <div class="campo-icone">
-                            <i class="fa-solid fa-leaf icone-cat"></i>
-                        </div>
-                        <p class="titulo-cat">Impacto Ambiental</p>
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="desc-cat">Como a empresa contribui para o meio ambiente</p>
-                    </div>
-
-                    <div class="categoria-item">
-                        <div class="campo-icone">
-                            <i class="fa-solid fa-circle-check icone-cat"></i>
-                        </div>
-                        <p class="titulo-cat">Conduta Ética</p>
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="desc-cat">Transparência e respeito nas relações</p>
-                    </div>
-
-                    <div class="categoria-item">
-                        <div class="campo-icone">
-                            <i class="fa-solid fa-users icone-cat"></i>
-                        </div>
-                        <p class="titulo-cat">Responsabilidade Social</p>
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="desc-cat">Apoio à comunidade e colaboradores</p>
-                    </div>
-
-                    <div class="categoria-item">
-                        <div class="campo-icone">
-                            <i class="fa-solid fa-comment-dots icone-cat"></i>
-                        </div>
-                        <p class="titulo-cat">Qualidade dos Produtos/Serviços</p>
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="desc-cat">Entrega do que promete com segurança e qualidade</p>
-                    </div>
-
-                    <div class="categoria-item">
-                        <div class="campo-icone">
-                            <i class="fa-solid fa-star icone-cat"></i>
-                        </div>
-                        <p class="titulo-cat">Comunicação</p>
-                        <div class="estrelas">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="desc-cat">Clareza e honestidade nas informações</p>
-                    </div>
-
-                </div>
-            
-
-            <div class="bloco-comentario-final escondido">
-
-                <div class="area-textarea">
-                    <label for="comentarioTexto">Deixe seu comentário (opcional)</label>
-                    <textarea id="comentarioTexto" rows="4"
-                        placeholder="Conte sua experiência com a empresa..."></textarea>
-                    <span class="contador-caracteres">0/500</span>
-                </div>
-
-                <div class="rodape-formulario escondido">
-                    <div class="opcao-anonima">
-                        <input type="checkbox" id="checkAnonimo">
-                        <label for="checkAnonimo">Quero manter minha avaliação anônima</label>
-                    </div>
-
-                    <button type="submit" class="btn-enviar-avaliacao">
-                        <i class="fa-solid fa-paper-plane"></i> Enviar avaliação
-                    </button>
-                </div>
-
+            <div class="categoria-item">
+              <div class="campo-icone">
+                <i class="fa-solid fa-star icone-cat"></i>
+              </div>
+              <p class="titulo-cat">Comunicação</p>
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="desc-cat">Clareza e honestidade nas informações</p>
             </div>
-</div>
-        </section>
+          </div>
 
+          <div class="bloco-comentario-final escondido">
+            <div class="area-textarea">
+              <label for="comentarioTexto"
+                >Deixe seu comentário (opcional)</label
+              >
+              <textarea
+                id="comentarioTexto"
+                rows="4"
+                placeholder="Conte sua experiência com a empresa..."
+              ></textarea>
+              <span class="contador-caracteres">0/500</span>
+            </div>
+
+            <div class="rodape-formulario escondido">
+              <div class="opcao-anonima">
+                <input type="checkbox" id="checkAnonimo" />
+                <label for="checkAnonimo"
+                  >Quero manter minha avaliação anônima</label
+                >
+              </div>
+
+              <button type="submit" class="btn-enviar-avaliacao">
+                <i class="fa-solid fa-paper-plane"></i> Enviar avaliação
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../Assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
