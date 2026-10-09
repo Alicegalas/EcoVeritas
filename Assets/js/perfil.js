@@ -22,7 +22,7 @@ const USUARIOS = [
   },
   {
     id: 4,
-    nome: "",
+    nome: "Usuario",
     email: "Usuario@Ecoveritas.com",
     senha: "123456"
   }
