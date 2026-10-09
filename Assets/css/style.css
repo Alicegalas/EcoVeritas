@@ -1289,7 +1289,6 @@ a.btn1:hover {
   margin-bottom: 25px;
 }
 
-/* AQUI ESTAVA O GATINHO (Faltava definir as 5 colunas iguais) */
 .grid-categorias {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1452,14 +1451,12 @@ a.btn1:hover {
 
 }
 
-/* ===== Empresas Certificadas ===== */
 .EmpresasCertificadasPagina .page {
   max-width: 1180px;
   margin: 0 auto;
   padding: 28px 24px 60px;
 }
 
-/* Top bar: busca + botão filtro */
 .EmpresasCertificadasPagina .topbar {
   display: flex;
   gap: 14px;
@@ -1516,7 +1513,6 @@ a.btn1:hover {
   font-size: 13px;
 }
 
-/* Chips de categoria */
 .EmpresasCertificadasPagina .chips {
   display: flex;
   gap: 5px;
@@ -1548,7 +1544,6 @@ a.btn1:hover {
   border-color: #1f6b3a;
 }
 
-/* Cabeçalho da seção */
 .EmpresasCertificadasPagina .section-head {
   display: flex;
   justify-content: space-between;
@@ -1567,7 +1562,6 @@ a.btn1:hover {
   color: #6b756c;
 }
 
-/* Grid - garante largura igual entre colunas */
 .EmpresasCertificadasPagina .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1591,7 +1585,6 @@ a.btn1:hover {
   }
 }
 
-/* Card com altura e largura fixas */
 .EmpresasCertificadasPagina .card {
   background: #ffffff;
   border: 1px solid #e2e6e2;
@@ -1613,7 +1606,6 @@ a.btn1:hover {
   min-width: 0;
 }
 
-/* Logo maior */
 .EmpresasCertificadasPagina .logo-badge {
   width: 56px;
   height: 56px;
@@ -1625,7 +1617,6 @@ a.btn1:hover {
   font-size: 17px;
   color: #ffffff;
   letter-spacing: .3px;
-
   flex-shrink: 0;
 }
 
@@ -1974,7 +1965,6 @@ a.btn1:hover {
 .login-selos li + li { padding-left: 10px; border-left: 1px solid #b7dfb2; }
 .login-selos i { color: #2e7d32; font-size: 14px; }
 
-/* ---------- Lado direito ---------- */
 .login-lado-direito {
   display: flex;
   flex-direction: column;
@@ -1992,7 +1982,6 @@ a.btn1:hover {
   color: #0b3d1e;
 }
 
-/* Perfil opcional */
 .login-perfil {
   display: flex;
   align-items: center;
@@ -2030,7 +2019,6 @@ a.btn1:hover {
   border-radius: 6px;
 }
 
-/* Campos */
 .login-campo {
   display: flex;
   align-items: center;
@@ -2057,7 +2045,6 @@ a.btn1:hover {
 
 .login-olho { border: 0; background: none; padding: 0; color: #7cc576; cursor: pointer; }
 
-/* Opções */
 .login-opcoes {
   display: flex;
   justify-content: space-between;
@@ -2087,7 +2074,7 @@ a.btn1:hover {
 
 .login-erro { min-height: 18px; margin: 0 0 8px; font-size: 12px; color: #b3261e; }
 
-/* Botão */
+
 .login-botao-entrar {
   display: flex;
   align-items: center;
@@ -2105,11 +2092,9 @@ a.btn1:hover {
   cursor: pointer;
 }
 .login-botao-entrar:hover { background: #0f5128; }
-
 .login-cadastro { margin: 20px 0 24px; text-align: center; font-size: 12px; color: #7cc576; }
 .login-cadastro a { color: #2e7d32; font-weight: 700; text-decoration: none; }
 
-/* Aviso */
 .login-aviso {
   display: flex;
   gap: 10px;
@@ -2124,17 +2109,11 @@ a.btn1:hover {
 .login-aviso p { margin: 2px 0 0; }
 
 .login-card :focus-visible {outline-offset: 2px; }
-
-
-/* ---------- Perfil no canto inferior do menu ---------- */
-/* O perfil fica logo abaixo do card de cima, com um espaço entre eles.
-   Para subir ou descer, mude o valor de margin-top. */
 .layout-nav > .perfil-nav { margin-top: 28px; }
 
 .perfil-nav,
 .perfil-nav * { box-sizing: border-box; }
 
-/* Card do perfil */
 .perfil-nav {
   display: flex;
   align-items: center;
@@ -2154,7 +2133,6 @@ a.btn1:hover {
   gap: 12px;
 }
 
-/* Foto */
 .perfil-avatar {
   flex-shrink: 0;
   display: flex;
@@ -2172,7 +2150,6 @@ a.btn1:hover {
 .perfil-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .perfil-avatar-grande { width: 84px; height: 84px; font-size: 30px; border-color: #b7dfb2; }
 
-/* Nome (branco) e e-mail (cinza) */
 .perfil-dados {
   min-width: 0;
   display: flex;
@@ -2197,7 +2174,6 @@ a.btn1:hover {
   white-space: nowrap;
 }
 
-/* Ícones alinhados e do mesmo tamanho */
 .perfil-acoes {
   flex-shrink: 0;
   display: flex;
@@ -2225,7 +2201,6 @@ a.btn1:hover {
 .perfil-acoes button:hover { color: #ffffff; background: rgba(255, 255, 255, 0.18); }
 .perfil-acoes button:focus-visible { outline: 2px solid #ffffff; outline-offset: 1px; }
 
-/* ---------- Modal de edição ---------- */
 .perfil-modal {
   position: fixed;
   inset: 0;
@@ -2288,4 +2263,393 @@ a.btn1:hover {
 @media (max-width: 480px) {
   .perfil-modal-rodape { flex-direction: column-reverse; align-items: stretch; }
   .perfil-modal-rodape > div { justify-content: flex-end; }
+}
+
+img { max-width: 100%; }
+
+.mobile-bar { display: none; }
+.nav-overlay { display: none; }
+
+.perfil-modal { z-index: 1100; }
+
+
+@media (max-width: 1280px) {
+  .Banner-eco-image {
+    width: auto;
+    max-width: 920px;
+    height: auto;
+    min-height: 240px;
+    margin-right: 40px;
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .bloco-banner-avaliacao,
+  .buscar-alvo,
+  .bloco-card-empresa,
+  .bloco-avaliacoes-estrelas {
+    width: auto;
+    max-width: 900px;
+    margin-right: 40px;
+  }
+
+  .bloco-banner-avaliacao { height: auto; min-height: 169px; }
+  .bloco-comentario-final { width: auto; max-width: 835px; }
+
+  .Banner-eco-image img {
+    height: auto;
+    max-height: 220px;
+    max-width: 45%;
+    margin-left: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+  .bloco-banner-avaliacao img {
+    width: auto;
+    max-width: 35%;
+    height: auto;
+    max-height: 120px;
+    margin-left: auto;
+  }
+
+  .pesquisa-inicio {
+    position: relative;
+    max-width: 400px;
+    margin-right: 40px;
+  }
+  .pesquisa-inicio input { width: 100%; }
+  .pesquisa-inicio i {
+    left: auto;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .comoFuncionaSection,
+  .empresasDestaqueSection { margin-right: 40px; }
+
+  .imagem-empresas-certificadas { right: 40px; }
+
+  .banner-sobre { height: auto; min-height: 320px; }
+  .banner-sobre img {
+    width: auto;
+    max-width: 45%;
+    height: auto;
+    right: 40px;
+  }
+
+  .banner-pilares { margin-right: 40px; }
+  .nossos-pilares { flex-wrap: wrap; align-items: stretch; }
+  .banner-pilar {
+    width: auto;
+    height: auto;
+    min-height: 112px;
+    flex: 1 1 260px;
+  }
+
+  .banners-nossa-equipe { padding: 34px 40px; }
+  .div-nossa-equipe { flex-wrap: wrap; }
+  .banner-nossa-equipe {
+    width: auto;
+    flex: 1 1 280px;
+    max-width: 420px;
+  }
+
+  .EmpresasCertificadasPagina .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  html, body { overflow-x: hidden; }
+  body.menu-aberto { overflow: hidden; }
+
+  .mobile-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 8px 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    background: #063d1d;
+    z-index: 900;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-bar-marca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+  }
+  .mobile-bar-marca img { width: 32px; height: 32px; }
+
+  .hamb-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .hamb-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .hamb-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+  }
+  .hamb-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamb-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .hamb-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1000;
+  }
+  .nav-overlay.aberto {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+
+  .layout-nav {
+    left: -300px;
+    width: min(280px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+    z-index: 1001;
+    visibility: hidden;
+    transition: left 0.3s ease, visibility 0s linear 0.3s;
+  }
+  .layout-nav.aberto {
+    left: 0;
+    visibility: visible;
+    box-shadow: 8px 0 30px rgba(0, 0, 0, 0.35);
+    transition: left 0.3s ease;
+  }
+  .container-estrita-nav { margin-top: 32px; }
+
+  .layout-nav nav { margin: 24px 0; }
+  nav ul li a,
+  nav ul li a:hover,
+  nav ul li a.bnt-nav-ativo {
+    padding: 12px 18px;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 10px;
+  }
+
+  main { margin-left: 0; padding-top: 60px; }
+
+  .pesquisa-inicio,
+  .Banner-eco-image,
+  .comoFuncionaSection,
+  .empresasDestaqueSection,
+  .bloco-banner-avaliacao,
+  .buscar-alvo,
+  .bloco-card-empresa,
+  .bloco-avaliacoes-estrelas,
+  .banner-pilares {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .avaliarEmprasa { padding: 0 0 32px; max-width: none; }
+  .bloco-comentario-final { margin-left: 0; margin-right: 0; }
+  .avaliarEmprasa > .bloco-comentario-final { margin-left: 20px; margin-right: 20px; }
+
+  input, textarea, select { font-size: 16px !important; }
+
+  .Banner-eco-image,
+  .banner-sobre {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+    padding: 24px;
+    gap: 8px;
+  }
+  .Banner-eco-image img,
+  .banner-sobre img {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 180px;
+    margin: 12px auto 0;
+    align-self: center;
+  }
+
+  .Banner-eco-escrita h2,
+  .Banner-eco-escrita h3 { position: static; }
+  .Banner-eco-escrita h2 { margin-bottom: 6px; }
+  .Banner-eco-escrita h3 { font-size: clamp(22px, 6vw, 30px); margin-bottom: 8px; }
+  .Banner-eco-escrita p { width: auto; }
+
+  .texto-banner-empresas-certificadas h3 {
+    width: auto !important;
+    font-size: clamp(22px, 6vw, 30px);
+  }
+  .imagem-empresas-certificadas { position: static; }
+
+  a.btn-banner { top: 0; margin: 14px 8px 0 0; }
+
+  .bloco-banner-avaliacao {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    padding: 22px 20px;
+    gap: 12px;
+  }
+  .bloco-banner-avaliacao img {
+    max-width: 200px;
+    max-height: none;
+    margin: 0 auto;
+  }
+  .conteudo-banner { align-items: flex-start; }
+  .texto-banner h2 { font-size: 20px; }
+  .texto-banner p { width: auto; }
+  .link-voltar { top: 0; display: inline-block; margin-bottom: 10px; }
+
+  .cardsInicio,
+  .cardsInicioEmpresas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+  }
+  .cardsInicioEmpresas { margin-left: 0; }
+  .cards { width: auto; height: auto; min-height: 180px; padding: 20px 14px; }
+  .cardsEmpresasdestaque { width: auto; height: auto; min-height: 150px; padding: 20px 12px; }
+  .logoEmpresa img { max-width: 100%; }
+
+  .bloco-card-empresa {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 16px;
+  }
+  .perfil-empresa { align-items: flex-start; }
+  .foto-empresa { flex-shrink: 0; }
+  .info-empresa {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px 20px;
+    position: static;
+    margin-bottom: 0;
+  }
+  .link-detalhes { width: 100%; height: auto; justify-content: center; padding: 14px; }
+
+  .bloco-avaliacoes-estrelas { padding: 20px; }
+  .grid-categorias { grid-template-columns: repeat(3, 1fr); }
+
+  .btn-button { padding: 0 16px; }
+  .rodape-formulario {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+  .btn-enviar-avaliacao { justify-content: center; padding: 14px; }
+
+  .EmpresasCertificadasPagina .page { padding: 20px 16px 48px; }
+  .EmpresasCertificadasPagina .chips { margin-left: 0; }
+  .EmpresasCertificadasPagina .section-head { flex-wrap: wrap; gap: 6px; }
+  .EmpresasCertificadasPagina .card { height: auto; min-height: 260px; }
+  .EmpresasCertificadasPagina .filter-btn { justify-content: center; }
+
+  .banner-pilares { margin-top: 24px; }
+  .banners-nossa-equipe { padding: 24px 20px; }
+}
+
+
+@media (max-width: 820px) {
+  .EmpresasCertificadasPagina .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .login-pagina { padding: 16px 12px; }
+  .login-card { grid-template-columns: 1fr; }
+  .login-lado-esquerdo { padding: 28px 24px 20px; }
+  .login-logo { margin-bottom: 16px; }
+  .login-ilustracao { display: none; }
+  .login-selos { flex-direction: column; gap: 10px; margin-top: 16px; }
+  .login-selos li + li { padding-left: 0; border-left: 0; }
+  .login-lado-direito { padding: 28px 24px; }
+  .login-perfil { flex-wrap: wrap; }
+}
+
+
+@media (max-width: 620px) {
+  .EmpresasCertificadasPagina .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .EmpresasCertificadasPagina .card { min-height: 0; }
+
+  .grid-categorias { grid-template-columns: repeat(2, 1fr); }
+  .categoria-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+@media (max-width: 480px) {
+  .pesquisa-inicio,
+  .Banner-eco-image,
+  .comoFuncionaSection,
+  .empresasDestaqueSection,
+  .bloco-banner-avaliacao,
+  .buscar-alvo,
+  .bloco-card-empresa,
+  .bloco-avaliacoes-estrelas,
+  .banner-pilares {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .avaliarEmprasa > .bloco-comentario-final { margin-left: 16px; margin-right: 16px; }
+
+  .Banner-eco-image,
+  .banner-sobre { padding: 20px 16px; }
+
+  .banner-nossa-equipe {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .login-lado-esquerdo { padding: 24px 20px 16px; }
+  .login-lado-direito { padding: 24px 20px; }
+}
+
+
+@media (max-width: 768px) {
+  .pesquisa-inicio i,
+  .EmpresasCertificadasPagina .search-wrap i {
+    display: none;
+  }
+
+  .EmpresasCertificadasPagina .search-wrap input {
+    padding-left: 16px;
+  }
 }

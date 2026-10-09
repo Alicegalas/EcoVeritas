@@ -1,8 +1,3 @@
-/* =========================================================
-   EcoVeritas - dados + CRUD de perfil + sessão
-   Carregue este arquivo ANTES do login.js e nas páginas do dash.
-   ========================================================= */
-
 const LOGIN_URL = "../login.html"; // caminho a partir da pasta pages
 
 /* "JSON" de usuários cadastrados */
@@ -23,6 +18,12 @@ const USUARIOS = [
     id: 3,
     nome: "Gabriella",
     email: "Gabriella@Ecoveritas.com",
+    senha: "123456"
+  },
+  {
+    id: 3,
+    nome: "",
+    email: "Usuario@gmail.com",
     senha: "123456"
   }
 ];
@@ -49,7 +50,7 @@ function gravar(chave, valor) {
   }
 }
 
-/* ---------- CRUD do perfil (nome + foto) ---------- */
+/*CRUD do perfil*/
 const Perfil = {
   // READ
   ler(email) {
@@ -64,7 +65,6 @@ const Perfil = {
     return gravar(CHAVE_PERFIS, todos);
   },
 
-  // DELETE (volta ao nome padrão e sem foto)
   remover(email) {
     const todos = lerJSON(CHAVE_PERFIS);
     delete todos[email.toLowerCase()];
@@ -72,7 +72,6 @@ const Perfil = {
   }
 };
 
-/* ---------- Sessão ---------- */
 const Sessao = {
   entrar(email, lembrar) {
     localStorage.removeItem(CHAVE_SESSAO);
@@ -87,7 +86,6 @@ const Sessao = {
     return sessionStorage.getItem(CHAVE_SESSAO) || localStorage.getItem(CHAVE_SESSAO);
   },
 
-  // Usuário base + perfil editado
   usuario() {
     const email = this.email();
     if (!email) return null;
@@ -110,9 +108,6 @@ const Sessao = {
   }
 };
 
-/* ---------- Utilitários ---------- */
-
-// Corta a imagem em quadrado e reduz para caber no localStorage
 function lerImagem(arquivo, tamanho = 240) {
   return new Promise((resolve, reject) => {
     if (!arquivo || !arquivo.type.startsWith("image/")) {
@@ -155,10 +150,6 @@ function preencherAvatar(elemento, usuario) {
   }
 }
 
-/* =========================================================
-   Perfil no menu do dash
-   Funciona em qualquer página que tenha <div id="perfilNav"></div>
-   ========================================================= */
 function iniciarPerfilNav() {
   const alvo = document.getElementById("perfilNav");
   if (!alvo) return;

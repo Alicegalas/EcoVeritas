@@ -1,8 +1,3 @@
-/* =========================================================
-   EcoVeritas - lógica da tela de login
-   (depende de perfil.js, que traz USUARIOS, Perfil e Sessao)
-   ========================================================= */
-
 const DESTINO_APOS_LOGIN = "pages/Inicio.html";
 
 const form = document.getElementById("formLogin");
@@ -17,19 +12,18 @@ const erroLogin = document.getElementById("erroLogin");
 
 let fotoEscolhida = "";
 
-// Já está logado? Vai direto para o dash.
+// Já está logado Vai direto para o dash.
 if (Sessao.usuario()) {
   window.location.replace(DESTINO_APOS_LOGIN);
 }
 
-// Preenche o e-mail lembrado
 const emailLembrado = localStorage.getItem(CHAVE_LEMBRAR);
 if (emailLembrado) {
   campoEmail.value = emailLembrado;
   mostrarPerfilSalvo(emailLembrado);
 }
 
-/* ---------- Prévia da foto ---------- */
+
 function desenharPrevia() {
   previaFoto.innerHTML = "";
   if (fotoEscolhida) {
@@ -72,7 +66,6 @@ btnRemoverFoto.addEventListener("click", () => {
   desenharPrevia();
 });
 
-/* ---------- Mostrar / ocultar senha ---------- */
 const btnVerSenha = document.getElementById("verSenha");
 btnVerSenha.addEventListener("click", () => {
   const mostrando = campoSenha.type === "text";
@@ -83,7 +76,6 @@ btnVerSenha.addEventListener("click", () => {
     : '<i class="fa-regular fa-eye-slash"></i>';
 });
 
-/* ---------- Login ---------- */
 form.addEventListener("submit", e => {
   e.preventDefault();
   erroLogin.textContent = "";
@@ -107,7 +99,6 @@ form.addEventListener("submit", e => {
     return;
   }
 
-  // CREATE/UPDATE: salva o perfil escolhido antes de entrar
   const dados = {};
   const nome = campoNome.value.trim();
   if (nome) dados.nome = nome;
