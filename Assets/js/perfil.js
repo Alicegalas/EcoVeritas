@@ -2,35 +2,27 @@ const LOGIN_URL = "../login.html"; // caminho a partir da pasta pages
 
 /* "JSON" de usuários cadastrados */
 const USUARIOS = [
-  {
-    id: 1,
-    nome: "Clara",
-    email: "Clara@Ecoveritas.com",
-    senha: "123456"
-  },
-  {
-    id:2,
-    nome: "Jhenifer",
-    email: "Jhenifer@Ecoveritas.com",
-    senha: "123456"
-  },
-  {
-    id: 3,
-    nome: "Gabriella",
-    email: "Gabriella@Ecoveritas.com",
-    senha: "123456"
-  },
-  {
-    id: 4,
-    nome: "Usuario",
-    email: "Usuario@Ecoveritas.com",
-    senha: "123456"
-  }
+  { id: 1, nome: "Clara",     email: "Clara@Ecoveritas.com",     senha: "123456" },
+  { id: 2, nome: "Jhenifer",  email: "Jhenifer@Ecoveritas.com",  senha: "123456" },
+  { id: 3, nome: "Gabriella", email: "Gabriella@Ecoveritas.com", senha: "123456" },
+  { id: 4, nome: "Usuario",   email: "Usuario@Ecoveritas.com",   senha: "123456" }
 ];
 
 const CHAVE_PERFIS = "ecoveritas_perfis";        // { "email": { nome, foto } }
 const CHAVE_SESSAO = "ecoveritas_sessao";        // email logado
 const CHAVE_LEMBRAR = "ecoveritas_email_lembrado";
+
+/* ---------- E-mail sem espaços e sem diferença de maiúsculas ---------- */
+function normalizarEmail(email) {
+  return String(email || "").trim().toLowerCase();
+}
+
+/* Confere e-mail e senha. Retorna o usuário ou null. */
+function autenticar(email, senha) {
+  const e = normalizarEmail(email);
+  const s = String(senha || "");
+  return USUARIOS.find(u => normalizarEmail(u.email) === e && u.senha === s) || null;
+}
 
 /* ---------- Armazenamento seguro ---------- */
 function lerJSON(chave) {
@@ -54,32 +46,42 @@ function gravar(chave, valor) {
 const Perfil = {
   // READ
   ler(email) {
-    return lerJSON(CHAVE_PERFIS)[email.toLowerCase()] || null;
+    return lerJSON(CHAVE_PERFIS)[normalizarEmail(email)] || null;
   },
 
   // CREATE / UPDATE
   salvar(email, dados) {
     const todos = lerJSON(CHAVE_PERFIS);
-    const chave = email.toLowerCase();
+    const chave = normalizarEmail(email);
     todos[chave] = { ...(todos[chave] || {}), ...dados };
     return gravar(CHAVE_PERFIS, todos);
   },
 
   remover(email) {
     const todos = lerJSON(CHAVE_PERFIS);
-    delete todos[email.toLowerCase()];
+    delete todos[normalizarEmail(email)];
     return gravar(CHAVE_PERFIS, todos);
   }
 };
 
 const Sessao = {
   entrar(email, lembrar) {
+    const limpo = normalizarEmail(email);
     localStorage.removeItem(CHAVE_SESSAO);
     sessionStorage.removeItem(CHAVE_SESSAO);
-    (lembrar ? localStorage : sessionStorage).setItem(CHAVE_SESSAO, email.toLowerCase());
+    (lembrar ? localStorage : sessionStorage).setItem(CHAVE_SESSAO, limpo);
 
-    if (lembrar) localStorage.setItem(CHAVE_LEMBRAR, email);
+    if (lembrar) localStorage.setItem(CHAVE_LEMBRAR, limpo);
     else localStorage.removeItem(CHAVE_LEMBRAR);
+  },
+
+  /* Atalho para o formulário: confere e já abre a sessão.
+     Retorna true se deu certo, false se e-mail/senha estiverem errados. */
+  login(email, senha, lembrar) {
+    const usuario = autenticar(email, senha);
+    if (!usuario) return false;
+    this.entrar(usuario.email, lembrar);
+    return true;
   },
 
   email() {
@@ -87,10 +89,10 @@ const Sessao = {
   },
 
   usuario() {
-    const email = this.email();
+    const email = normalizarEmail(this.email());
     if (!email) return null;
 
-    const base = USUARIOS.find(u => u.email.toLowerCase() === email);
+    const base = USUARIOS.find(u => normalizarEmail(u.email) === email);
     if (!base) return null;
 
     const perfil = Perfil.ler(email) || {};
