@@ -2123,7 +2123,7 @@ a.btn1:hover {
 .login-aviso strong { color: #0b3d1e; }
 .login-aviso p { margin: 2px 0 0; }
 
-.login-card :focus-visible { outline: 2px solid #2e7d32; outline-offset: 2px; }
+.login-card :focus-visible {outline-offset: 2px; }
 
 
 /* ---------- Perfil no canto inferior do menu ---------- */
