@@ -11,9 +11,8 @@
 
 <body>
     <header class="layout-nav">
-
         <div class="logo-img">
-            <img src="../Assets/img/icone.png" alt="logo">
+            <img src="../Assets/img/icone.png" alt="logo" />
             <h1>EcoVeritas</h1>
         </div>
         <div class="layout-pagrafo-nav">
@@ -22,22 +21,30 @@
 
         <nav>
             <ul>
-                <li><a href="Inicio.html">
+                <li>
+                    <a href="Inicio.html">
                         <i class="fa-solid fa-house"></i>
                         Início
-                    </a></li>
-                <li><a href="avaliarEmpresas.html"">
-                        <i class=" fa-solid fa-clipboard-check"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="avaliarEmpresas.html">
+                        <i class="fa-solid fa-clipboard-check"></i>
                         <span class="alinhar-paragrafo"> Avaliar Empresa</span>
-                    </a></li>
-                <li><a href="empresasCertificadas.html" class="bnt-nav-ativo">
+                    </a>
+                </li>
+                <li>
+                    <a href="empresasCertificadas.html" class="bnt-nav-ativo">
                         <i class="fa-solid fa-medal"></i>
                         <span class="arrumar-max">Empresas Certificadas</span>
-                    </a></li>
-                <li><a href="sobre.html">
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html">
                         <i class="fa-solid fa-circle-info"></i>
                         Sobre
-                    </a></li>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -49,28 +56,42 @@
             <p>Consumo consciente começa com informação confiável.</p>
         </div>
     </header>
+
     <main>
-        <section class="EmpresaCertificada">
-            <div class="pesquisa-inicio">
-                <input type="text" placeholder="Busque por empresas, produtos ou categorias...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="bloco-banner-avaliacao">
-                <a href="#" class="link-voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</a>
+        <section class="EmpresasCertificadasPagina">
+
+            <div class="bloco-banner-avaliacao escondido">
                 <div class="conteudo-banner">
-                    <div class="texto-banner">
-                        <h1>Avaliar empresa</h1>
-                        <p>Sua Avaliação ajuda outros consumidores a fazerem escolhas mais conscientes e fortalece a
-                            transparência das empresas</p>
-                    </div>
-                    <div class="imagem-banner">
-                        <img src="../Assets/img/Globo-inicio.png" alt="Icone sustentabilidade">
+                    <div class="texto-banner-empresas-certificadas">
+                        <a href="Inicio.html" class="link-voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</a>
+                        <h2>EMPRESAS CERTIFICADAS</h2>
+                        <h3>Marcas que realmente fazem a diferença.</h3>
+                        <p>
+                            Conheça empresas que passaram por nossa verificação e demonstram compromisso com o meio
+                            ambiente, com a sociedade e com a transparência.
+                        </p>
                     </div>
                 </div>
+                <img src="../Assets/img/Globo-inicio.png" alt="Icone sustentabilidade"
+                    class="imagem-empresas-certificadas">
             </div>
-            
+
+            <div class="page">
+
+                <div class="chips escondido" id="chips"></div>
+
+                <div class="section-head escondido">
+                    <h1>Empresas certificadas</h1>
+                    <span class="count escondido" id="resultCount"></span>
+                </div>
+
+                <div class="grid escondido" id="grid"></div>
+            </div>
+
         </section>
     </main>
+
+    <script src="../Assets/js/script.js"></script>
 </body>
 
 </html>

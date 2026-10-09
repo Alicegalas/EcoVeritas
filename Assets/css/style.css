@@ -390,6 +390,7 @@ a.btn1:hover {
 .avaliacao-inicio i {
   font-size: 10px;
 }
+
 .empresasDestaqueSection {
   margin-bottom: 20px;
 }
@@ -446,6 +447,7 @@ a.btn1:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .bloco-banner-avaliacao img {
   width: 280px;
   height: 120px;
@@ -542,10 +544,11 @@ a.btn1:hover {
   background-color: #4b7a3b;
   border-radius: 50%;
 }
-.bloco-principal-info-empresa{
-    display: flex;
+
+.bloco-principal-info-empresa {
+  display: flex;
   flex-direction: column;
-  gap: 10px;  
+  gap: 10px;
 }
 
 .info-empresa {
@@ -553,14 +556,13 @@ a.btn1:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  position: relative;
-  top: -10px;
+  margin-bottom: -17px;
 }
 
 .info-empresa h2 {
   font-size: 1.2rem;
   color: #0b2e13;
-  margin: 00;
+  margin: 0;
 }
 
 .info-empresa p {
@@ -569,18 +571,30 @@ a.btn1:hover {
   color: #4b7a3b;
   margin: 0;
 }
+.info-empresa-natura h3{
+  color: #3B6B3B;
+  font-size: 14px;
+  font-weight: 400;
+}
+.info-empresa-natura p {
+  color:#0B3B1D;
+  font-size: 13px;
+  font-weight: 400;
+}
+.info-empresa-natura{
+  gap: 4px;
+}
 
 
 .link-detalhes {
-    width: 180px;
-    height: 64px;
+  width: 180px;
+  height: 64px;
   text-decoration: none;
   color: #0b2e13;
   font-weight: bold;
   background-color: #eaf1e7;
   border-radius: 10px;
   display: flex;
-  padding: 15px 25px;
   align-items: center;
   gap: 10px;
   transition: 0.3s;
@@ -685,11 +699,13 @@ a.btn1:hover {
   margin-bottom: 12px;
   color: #0b2e13;
 }
+
 #comentarioTexto::placeholder {
   color: #0b3b1d;
   font-size: 15px;
   font-family: roboto, "sans-serif";
 }
+
 .area-textarea textarea {
   width: 100%;
   padding: 15px;
@@ -1137,6 +1153,7 @@ a.btn1:hover {
 .avaliacao-inicio i {
   font-size: 10px;
 }
+
 .empresasDestaqueSection {
   margin-bottom: 20px;
 }
@@ -1162,18 +1179,6 @@ a.btn1:hover {
   gap: 30px;
 }
 
-.bloco-banner-avaliacao {
-  width: 900px;
-  height: 169px;
-  display: flex;
-  clear: both;
-  background-color: #eaf1e7;
-  padding: 30px 24px;
-  border-radius: 15px;
-  margin-top: 40px;
-  margin-left: 45px;
-}
-
 .link-voltar {
   font-size: 14px;
   text-decoration: none;
@@ -1192,11 +1197,6 @@ a.btn1:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.bloco-banner-avaliacao img {
-  width: 280px;
-  height: 120px;
-  margin-left: 150px;
 }
 
 .texto-banner h2 {
@@ -1424,11 +1424,13 @@ a.btn1:hover {
   margin-bottom: 12px;
   color: #0b2e13;
 }
+
 #comentarioTexto::placeholder {
   color: #0b3b1d;
   font-size: 15px;
   font-family: roboto, "sans-serif";
 }
+
 .area-textarea textarea {
   width: 100%;
   padding: 15px;
@@ -1484,459 +1486,282 @@ a.btn1:hover {
   background-color: #4b7a3b;
 }
 
-/* Páginas de autenticação (login / cadastro / recuperar senha) */
+.texto-banner-empresas-certificadas h2{
+  color: #2E5B2A;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 4px;
 
-:root {
-  --green-900: #0f3d24;
-  --green-800: #14532d;
-  --green-700: #1e6b3c;
-  --green-600: #2e7d4f;
-  --green-500: #4caf6f;
-  --green-400: #7fc99a;
-  --green-100: #e3f2e6;
-  --green-50: #f4f9f3;
-  --bg-page: #eef6ea;
-  --text-dark: #1c2b20;
-  --text-muted: #5b6b60;
-  --text-placeholder: #9fb3a5;
-  --border: #d9e6da;
-  --radius-lg: 22px;
-  --radius-md: 12px;
-  --shadow-card: 0 30px 60px -20px rgba(15, 61, 36, 0.18);
 }
 
-.auth-page-wrap {
-  width: 100%;
-  min-height: 100vh;
-  background: radial-gradient(circle at 12% 20%, #e4f2e0 0%, transparent 45%),
-              radial-gradient(circle at 78% 15%, #d9ecd6 0%, transparent 40%),
-              radial-gradient(circle at 20% 85%, #dcecd9 0%, transparent 45%),
-              var(--bg-page);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dark);
-  padding: 32px 16px;
-  box-sizing: border-box;
-}
-
-.auth-shell {
-  display: flex;
-  width: 100%;
-  max-width: 1120px;
-  min-height: 620px;
-  background: #fff;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
-}
-
-/* - Painel esquerdo - */
-.auth-left {
-  flex: 1.05;
-  padding: 52px 56px;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-page);
-  position: relative;
-}
-
-.auth-left .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 28px;
+.texto-banner-empresas-certificadas h3{
+  color: #0B3B1D;
   font-weight: 800;
-  color: var(--green-800);
-  margin-bottom: 40px;
+  font-size: 30px; 
+  width: max-content !important;
+   margin-bottom: 8px;
 }
 
-.brand-icon {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.auth-left .tagline {
-  font-size: 17px;
-  color: var(--text-dark);
-  margin: 0 0 14px;
-}
-
-.auth-left .headline {
-  font-size: 30px;
-  line-height: 1.28;
-  font-weight: 700;
-  color: var(--green-800);
-  margin: 0 0 18px;
-  max-width: 460px;
-}
-
-.auth-left .subcopy {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.5;
-  max-width: 400px;
-  margin: 0;
-}
-
-.hero-illustration {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-  margin: 12px 0;
-}
-
-.hero-illustration img {
-  width: 260px;
-  height: 260px;
-  object-fit: contain;
-}
-
-.auth-left .stat-row {
-  display: flex;
-  gap: 28px;
-  margin-top: auto;
-  padding-top: 8px;
-}
-
-.auth-left .stat-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.texto-banner-empresas-certificadas p{
+  color: #2E5B2A;
+  font-weight: 400;
   font-size: 14px;
-  color: var(--green-800);
-  font-weight: 600;
 }
 
-.auth-left .stat-item svg {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: var(--green-700);
-}
-
-.auth-left .stat-item span {
-  line-height: 1.25;
-}
-
-/* - Painel direito - */
-.auth-right {
-  flex: 0.95;
-  padding: 56px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #fff;
-}
-
-.auth-right .intro {
-  font-size: 16px;
-  color: var(--text-dark);
-  line-height: 1.5;
-  margin: 0 0 28px;
-}
-
-.auth-right .field {
-  margin-bottom: 20px;
-}
-
-.auth-right .field label {
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-}
-
-.input-wrap {
+.imagem-empresas-certificadas{
   position: relative;
-  display: flex;
-  align-items: center;
+  right: 120px;
+  
 }
 
-.input-wrap svg.icon-leading {
-  position: absolute;
-  left: 16px;
-  width: 18px;
-  height: 18px;
-  color: var(--green-600);
-  pointer-events: none;
+/* ===== Empresas Certificadas ===== */
+.EmpresasCertificadasPagina .page{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 24px 60px;
 }
 
-.input-wrap input {
-  width: 100%;
-  padding: 13px 16px 13px 46px;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-md);
-  font-size: 15px;
-  font-family: inherit;
-  color: var(--text-dark);
-  background: #fff;
-  outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+/* Top bar: busca + botão filtro */
+.EmpresasCertificadasPagina .topbar{
+    display:flex;
+    gap:14px;
+    margin-bottom: 20px;
+}
+.EmpresasCertificadasPagina .search-wrap{
+    flex:1;
+    position:relative;
+}
+.EmpresasCertificadasPagina .search-wrap input{
+    width:100%;
+    padding: 13px 16px 13px 44px;
+    border-radius: 999px;
+    border: 1px solid #e2e6e2;
+    background: #ffffff;
+    font-size: 14.5px;
+    color:#1c231e;
+    outline:none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+.EmpresasCertificadasPagina .search-wrap input:focus{
+    border-color: #2f8f4e;
+    box-shadow: 0 0 0 3px rgba(47,143,78,0.12);
+}
+.EmpresasCertificadasPagina .search-wrap i{
+    position:absolute;
+    left:16px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:14px;
+    color: #6b756c;
+}
+.EmpresasCertificadasPagina .filter-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: 1px solid #e2e6e2;
+    background: #ffffff;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #1c231e;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.EmpresasCertificadasPagina .filter-btn i{ font-size:13px; }
+
+/* Chips de categoria */
+.EmpresasCertificadasPagina .chips{
+    display:flex;
+    gap:5px;
+    flex-wrap:wrap;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.EmpresasCertificadasPagina .chip{
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid #e2e6e2;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c231e;
+    cursor:pointer;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.EmpresasCertificadasPagina .chip:hover{ border-color: #2f8f4e; }
+.EmpresasCertificadasPagina .chip.active{
+    background: #1f6b3a;
+    color: #ffffff;
+    border-color: #1f6b3a;
 }
 
-.input-wrap input::placeholder {
-  color: var(--text-placeholder);
+/* Cabeçalho da seção */
+.EmpresasCertificadasPagina .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom: 18px;
+}
+.EmpresasCertificadasPagina .section-head h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin:0;
+}
+.EmpresasCertificadasPagina .section-head .count{
+    font-size: 14px;
+    color: #6b756c;
 }
 
-.input-wrap input:focus {
-  border-color: var(--green-500);
-  box-shadow: 0 0 0 3px rgba(76, 175, 111, 0.18);
-}
-
-.input-wrap.has-toggle input {
-  padding-right: 46px;
-}
-
-.toggle-visibility {
-  position: absolute;
-  right: 14px;
-  background: none;
-  border: none;
-  padding: 4px;
-  cursor: pointer;
-  color: var(--green-600);
-  display: flex;
-}
-
-.toggle-visibility svg {
-  width: 19px;
-  height: 19px;
-}
-
-.field-error {
-  font-size: 12.5px;
-  color: #c0392b;
-  margin-top: 6px;
-  min-height: 15px;
-}
-
-.row-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  font-size: 14px;
-}
-
-.remember {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-dark);
-}
-
-.remember input[type="checkbox"] {
-  width: 17px;
-  height: 17px;
-  accent-color: #2f6fed;
-  cursor: pointer;
-}
-
-.auth-right .link {
-  color: var(--green-700);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.auth-right .link:hover {
-  text-decoration: underline;
-}
-
-.btn-primary {
-  width: 100%;
-  padding: 15px 18px;
-  background: var(--green-800);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius-md);
-  font-size: 16px;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: background 0.15s ease, transform 0.1s ease;
-}
-
-.btn-primary:hover {
-  background: var(--green-900);
-}
-
-.btn-primary:active {
-  transform: translateY(1px);
-}
-
-.btn-primary svg {
-  width: 18px;
-  height: 18px;
-}
-
-.btn-primary:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.auth-right .divider {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 22px 0;
-  color: var(--text-placeholder);
-  font-size: 13px;
-}
-
-.auth-right .divider::before,
-.auth-right .divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-
-.btn-google {
-  width: 100%;
-  padding: 13px 18px;
-  background: #fff;
-  color: var(--text-dark);
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-md);
-  font-size: 15px;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.btn-google:hover {
-  background: var(--green-50);
-  border-color: var(--green-400);
-}
-
-.btn-google svg {
-  width: 19px;
-  height: 19px;
-}
-
-.auth-switch {
-  text-align: center;
-  margin-top: 22px;
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-.auth-switch a {
-  color: var(--green-700);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.auth-switch a:hover {
-  text-decoration: underline;
-}
-
-.callout {
-  margin-top: 26px;
-  padding: 16px 18px;
-  background: var(--green-50);
-  border-radius: var(--radius-md);
-  display: flex;
-  gap: 12px;
-}
-
-.callout svg {
-  width: 20px;
-  height: 20px;
-  color: var(--green-700);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.callout-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin: 0 0 4px;
-}
-
-.callout-text {
-  font-size: 13px;
-  color: var(--green-700);
-  line-height: 1.45;
-  margin: 0;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: var(--green-700);
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-.back-link svg {
-  width: 16px;
-  height: 16px;
-}
-
-.success-box {
-  display: none;
-  align-items: flex-start;
-  gap: 12px;
-  background: var(--green-50);
-  border: 1px solid var(--green-400);
-  border-radius: var(--radius-md);
-  padding: 16px 18px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: var(--green-800);
-  line-height: 1.45;
-}
-
-.success-box.visible {
-  display: flex;
-}
-
-.success-box svg {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-@media (max-width: 900px) {
-  .auth-shell {
-    flex-direction: column;
-    min-height: auto;
-  }
-  .auth-left,
-  .auth-right {
-    padding: 40px 32px;
-  }
-  .hero-illustration {
-    min-height: 160px;
-  }
-  .hero-illustration img {
-    width: 320px;
-    height: 320px;
-    object-fit: contain;
-  }
-  .auth-left .stat-row {
-    flex-wrap: wrap;
+/* Grid - garante largura igual entre colunas */
+.EmpresasCertificadasPagina .grid{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
-    margin-top: 24px;
-  }
+    align-items: stretch;
+}
+@media (max-width: 1024px){
+    .EmpresasCertificadasPagina .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px){
+    .EmpresasCertificadasPagina .grid{ grid-template-columns: minmax(0, 1fr); }
+    .EmpresasCertificadasPagina .topbar{ flex-direction:column; }
+}
+
+/* Card com altura e largura fixas */
+.EmpresasCertificadasPagina .card{
+    background: #ffffff;
+    border: 1px solid #e2e6e2;
+    border-radius: 14px;
+    padding: 18px 18px 16px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    height: 280px;
+    width: 100%;
+    min-width: 0;        
+    box-sizing: border-box;
+}
+.EmpresasCertificadasPagina .card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    min-width: 0;
+}
+
+/* Logo maior */
+.EmpresasCertificadasPagina .logo-badge{
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: 700;
+    font-size: 17px;
+    color:#ffffff;
+    letter-spacing: .3px;
+    
+    flex-shrink: 0;
+}
+
+.EmpresasCertificadasPagina .logo-badge img{
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+    object-fit: contain;
+    padding: 7px;
+}
+
+.EmpresasCertificadasPagina .cert{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    background: #e7f5ea;
+    color: #1f6b3a;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    flex-shrink: 0;
+}
+.EmpresasCertificadasPagina .cert i{ font-size:11px; }
+
+.EmpresasCertificadasPagina .card h3{
+    margin: 2px 0 0;
+    font-size: 16.5px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+.EmpresasCertificadasPagina .card .sector{
+    margin:0;
+    font-size: 13px;
+    color: #6b756c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.EmpresasCertificadasPagina .badges{
+    display:flex;
+    gap:14px;
+    margin: 2px 0 2px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    min-width: 0;
+}
+.EmpresasCertificadasPagina .badge-item{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size: 12.5px;
+    color: #6b756c;
+    white-space: nowrap;
+}
+.EmpresasCertificadasPagina .badge-item i{ font-size:13px; color: #2f8f4e; }
+
+.EmpresasCertificadasPagina .stars{
+    display:flex;
+    gap:3px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.EmpresasCertificadasPagina .stars .fa-star,
+.EmpresasCertificadasPagina .stars .fa-star-half-stroke{ color: #f0b429; }
+.EmpresasCertificadasPagina .stars .fa-regular.fa-star{ color: #dfe3df; }
+
+.EmpresasCertificadasPagina .details-btn{
+    margin-top: auto;
+    width:100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 1.5px solid #1f6b3a;
+    background: transparent;
+    color: #1f6b3a;
+    font-weight: 600;
+    font-size: 14px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    transition: background .15s ease, color .15s ease;
+}
+.EmpresasCertificadasPagina .details-btn:hover{
+    background: #1f6b3a;
+    color:#ffffff;
+}
+.EmpresasCertificadasPagina .details-btn i{ font-size:12px; }
+
+.EmpresasCertificadasPagina .empty{
+    grid-column: 1 / -1;
+    text-align:center;
+    padding: 60px 20px;
+    color: #6b756c;
+    font-size: 15px;
 }
