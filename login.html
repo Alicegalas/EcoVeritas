@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar | EcoVeritas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body class="login-body">
+  <main class="login-pagina">
+    <div class="login-card">
+
+      <!-- Lado esquerdo -->
+      <section class="login-lado-esquerdo">
+        <div class="login-logo">
+          <img src="Assets/img/icone.png" alt="">
+          <span>EcoVeritas</span>
+        </div>
+
+        <p class="login-slogan">Transparência que transforma.</p>
+        <h1 class="login-titulo">Juntos por um consumo mais consciente e um futuro mais sustentável.</h1>
+        <p class="login-descricao">Avalie empresas, descubra práticas reais e faça parte da mudança.</p>
+
+        <div class="login-ilustracao" aria-hidden="true">
+          <img src="Assets/img/selo.png" alt="">
+        </div>
+
+        <ul class="login-selos">
+          <li><i class="fa-solid fa-shield-halved"></i> Empresas<br>certificadas</li>
+          <li><i class="fa-solid fa-leaf"></i> Impacto<br>coletivo</li>
+          <li><i class="fa-solid fa-people-group"></i> Consumidores<br>conscientes</li>
+        </ul>
+      </section>
+
+      <!-- Lado direito -->
+      <section class="login-lado-direito">
+        <p class="login-chamada">Faça login para continuar sua jornada por um consumo mais consciente.</p>
+
+        <form id="formLogin" novalidate>
+
+          <!-- Perfil opcional: aparece no menu do dash -->
+          <fieldset class="login-perfil">
+            <legend>Seu perfil (opcional)</legend>
+
+            <label class="login-foto-botao" for="fotoPerfil" title="Escolher foto">
+              <span class="login-foto-previa" id="previaFoto"><i class="fa-solid fa-camera"></i></span>
+            </label>
+            <input type="file" id="fotoPerfil" accept="image/*" hidden>
+
+            <div class="login-perfil-nome">
+              <label for="nomePerfil">Como quer ser chamada(o)?</label>
+              <input type="text" id="nomePerfil" maxlength="40" placeholder="Seu nome" autocomplete="name">
+              <button type="button" class="login-link" id="removerFoto" hidden>Remover foto</button>
+            </div>
+          </fieldset>
+
+          <label for="email">E-mail ou usuário</label>
+          <div class="login-campo">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" id="email" placeholder="Digite seu e-mail ou usuário" autocomplete="username">
+          </div>
+
+          <label for="senha">Senha</label>
+          <div class="login-campo">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password">
+            <button type="button" class="login-olho" id="verSenha" aria-label="Mostrar senha">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+
+          <div class="login-opcoes">
+            <label class="login-lembrar">
+              <input type="checkbox" id="lembrar" checked> Lembrar de mim
+            </label>
+            <a href="#" class="login-link">Esqueceu sua senha?</a>
+          </div>
+
+          <p class="login-erro" id="erroLogin" role="alert"></p>
+
+          <button type="submit" class="login-botao-entrar">
+            <i class="fa-solid fa-right-to-bracket"></i> Entrar
+          </button>
+
+          <p class="login-cadastro">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </form>
+
+        <aside class="login-aviso">
+          <i class="fa-solid fa-leaf"></i>
+          <div>
+            <strong>Sua escolha importa!</strong>
+            <p>Cada avaliação ajuda a construir um mercado mais ético e sustentável.</p>
+          </div>
+        </aside>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="Assets/js/perfil.js"></script>
+  <script src="Assets/js/login.js"></script>
+</body>
+</html>

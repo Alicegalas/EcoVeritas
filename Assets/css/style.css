@@ -8,6 +8,7 @@
 
 body {
   font-family: Roboto, "sans-serif";
+  background-color: #F9FBF9;
 }
 
 h1 {
@@ -173,8 +174,9 @@ main {
 }
 
 .Banner-eco-image img {
-  position: relative;
-  left: 40px;
+  height: 220px;
+  margin-left: 60px;
+  margin-top: 12px;
 }
 
 .Banner-eco-escrita {
@@ -571,17 +573,20 @@ a.btn1:hover {
   color: #4b7a3b;
   margin: 0;
 }
-.info-empresa-natura h3{
+
+.info-empresa-natura h3 {
   color: #3B6B3B;
   font-size: 14px;
   font-weight: 400;
 }
+
 .info-empresa-natura p {
-  color:#0B3B1D;
+  color: #0B3B1D;
   font-size: 13px;
   font-weight: 400;
 }
-.info-empresa-natura{
+
+.info-empresa-natura {
   gap: 4px;
 }
 
@@ -761,24 +766,6 @@ a.btn1:hover {
   background-color: #4b7a3b;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, "sans-serif";
-}
-
-h1 {
-  color: #fff;
-  font-size: 19.79px;
-  font-weight: 600;
-}
-
 .layout-nav {
   background-color: #063d1d;
   position: fixed;
@@ -905,16 +892,6 @@ main {
   margin-top: 32px;
 }
 
-.pesquisa-inicio input {
-  display: block;
-  width: 400px;
-  height: 40px;
-  padding: 10px 15px;
-  background-color: #fff;
-  color: black;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
 
 .pesquisa-inicio i {
   position: absolute;
@@ -1158,18 +1135,6 @@ a.btn1:hover {
   margin-bottom: 20px;
 }
 
-.escondido {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(50px);
-  transition: all 1s ease;
-}
-
-.visivel {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
 
 .avaliarEmprasa {
   max-width: 1000px;
@@ -1199,18 +1164,8 @@ a.btn1:hover {
   align-items: center;
 }
 
-.texto-banner h2 {
-  font-size: 24px;
-  color: #0b2e13;
-  margin-bottom: 10px;
-}
 
-.texto-banner p {
-  color: #0b2e13;
-  width: 410px;
-  font-size: 14px;
-  line-height: 1.5;
-}
+
 
 .buscar-alvo {
   margin-bottom: 24px;
@@ -1222,23 +1177,6 @@ a.btn1:hover {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #0b2e13;
-}
-
-.grupo-input-buscar {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.grupo-input-buscar input {
-  height: 42px;
-  flex: 1;
-  padding: 0px 15px;
-  border: 1px solid #d4dfd2;
-  border-radius: 8px;
-  outline: none;
-  margin-top: 24px;
   color: #0b2e13;
 }
 
@@ -1486,7 +1424,7 @@ a.btn1:hover {
   background-color: #4b7a3b;
 }
 
-.texto-banner-empresas-certificadas h2{
+.texto-banner-empresas-certificadas h2 {
   color: #2E5B2A;
   font-weight: 600;
   font-size: 12px;
@@ -1494,274 +1432,860 @@ a.btn1:hover {
 
 }
 
-.texto-banner-empresas-certificadas h3{
+.texto-banner-empresas-certificadas h3 {
   color: #0B3B1D;
   font-weight: 800;
-  font-size: 30px; 
+  font-size: 30px;
   width: max-content !important;
-   margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-.texto-banner-empresas-certificadas p{
+.texto-banner-empresas-certificadas p {
   color: #2E5B2A;
   font-weight: 400;
   font-size: 14px;
 }
 
-.imagem-empresas-certificadas{
+.imagem-empresas-certificadas {
   position: relative;
   right: 120px;
-  
+
 }
 
 /* ===== Empresas Certificadas ===== */
-.EmpresasCertificadasPagina .page{
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 28px 24px 60px;
+.EmpresasCertificadasPagina .page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
 }
 
 /* Top bar: busca + botão filtro */
-.EmpresasCertificadasPagina .topbar{
-    display:flex;
-    gap:14px;
-    margin-bottom: 20px;
+.EmpresasCertificadasPagina .topbar {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
 }
-.EmpresasCertificadasPagina .search-wrap{
-    flex:1;
-    position:relative;
+
+.EmpresasCertificadasPagina .search-wrap {
+  flex: 1;
+  position: relative;
 }
-.EmpresasCertificadasPagina .search-wrap input{
-    width:100%;
-    padding: 13px 16px 13px 44px;
-    border-radius: 999px;
-    border: 1px solid #e2e6e2;
-    background: #ffffff;
-    font-size: 14.5px;
-    color:#1c231e;
-    outline:none;
-    transition: border-color .15s ease, box-shadow .15s ease;
+
+.EmpresasCertificadasPagina .search-wrap input {
+  width: 100%;
+  padding: 13px 16px 13px 44px;
+  border-radius: 999px;
+  border: 1px solid #e2e6e2;
+  background: #ffffff;
+  font-size: 14.5px;
+  color: #1c231e;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
 }
-.EmpresasCertificadasPagina .search-wrap input:focus{
-    border-color: #2f8f4e;
-    box-shadow: 0 0 0 3px rgba(47,143,78,0.12);
+
+.EmpresasCertificadasPagina .search-wrap input:focus {
+  border-color: #2f8f4e;
+  box-shadow: 0 0 0 3px rgba(47, 143, 78, 0.12);
 }
-.EmpresasCertificadasPagina .search-wrap i{
-    position:absolute;
-    left:16px;
-    top:50%;
-    transform: translateY(-50%);
-    font-size:14px;
-    color: #6b756c;
+
+.EmpresasCertificadasPagina .search-wrap i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6b756c;
 }
-.EmpresasCertificadasPagina .filter-btn{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding: 12px 18px;
-    border-radius: 999px;
-    border: 1px solid #e2e6e2;
-    background: #ffffff;
-    font-size: 14.5px;
-    font-weight: 500;
-    color: #1c231e;
-    cursor:pointer;
-    white-space:nowrap;
+
+.EmpresasCertificadasPagina .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid #e2e6e2;
+  background: #ffffff;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #1c231e;
+  cursor: pointer;
+  white-space: nowrap;
 }
-.EmpresasCertificadasPagina .filter-btn i{ font-size:13px; }
+
+.EmpresasCertificadasPagina .filter-btn i {
+  font-size: 13px;
+}
 
 /* Chips de categoria */
-.EmpresasCertificadasPagina .chips{
-    display:flex;
-    gap:5px;
-    flex-wrap:wrap;
-    margin-left: 60px;
-    margin-bottom: 10px;
+.EmpresasCertificadasPagina .chips {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-bottom: 10px;
 }
-.EmpresasCertificadasPagina .chip{
-    padding: 9px 18px;
-    border-radius: 999px;
-    border: 1px solid #e2e6e2;
-    background: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    color: #1c231e;
-    cursor:pointer;
-    transition: background .15s ease, color .15s ease, border-color .15s ease;
-    -webkit-tap-highlight-color: transparent;
+
+.EmpresasCertificadasPagina .chip {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid #e2e6e2;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c231e;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+  -webkit-tap-highlight-color: transparent;
 }
-.EmpresasCertificadasPagina .chip:hover{ border-color: #2f8f4e; }
-.EmpresasCertificadasPagina .chip.active{
-    background: #1f6b3a;
-    color: #ffffff;
-    border-color: #1f6b3a;
+
+.EmpresasCertificadasPagina .chip:hover {
+  border-color: #2f8f4e;
+}
+
+.EmpresasCertificadasPagina .chip.active {
+  background: #1f6b3a;
+  color: #ffffff;
+  border-color: #1f6b3a;
 }
 
 /* Cabeçalho da seção */
-.EmpresasCertificadasPagina .section-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    margin-bottom: 18px;
+.EmpresasCertificadasPagina .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
 }
-.EmpresasCertificadasPagina .section-head h1{
-    font-size: 22px;
-    font-weight: 700;
-    margin:0;
+
+.EmpresasCertificadasPagina .section-head h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
 }
-.EmpresasCertificadasPagina .section-head .count{
-    font-size: 14px;
-    color: #6b756c;
+
+.EmpresasCertificadasPagina .section-head .count {
+  font-size: 14px;
+  color: #6b756c;
 }
 
 /* Grid - garante largura igual entre colunas */
-.EmpresasCertificadasPagina .grid{
-    display:grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
-    align-items: stretch;
+.EmpresasCertificadasPagina .grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
 }
-@media (max-width: 1024px){
-    .EmpresasCertificadasPagina .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (max-width: 1024px) {
+  .EmpresasCertificadasPagina .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-@media (max-width: 620px){
-    .EmpresasCertificadasPagina .grid{ grid-template-columns: minmax(0, 1fr); }
-    .EmpresasCertificadasPagina .topbar{ flex-direction:column; }
+
+@media (max-width: 620px) {
+  .EmpresasCertificadasPagina .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .EmpresasCertificadasPagina .topbar {
+    flex-direction: column;
+  }
 }
 
 /* Card com altura e largura fixas */
-.EmpresasCertificadasPagina .card{
-    background: #ffffff;
-    border: 1px solid #e2e6e2;
-    border-radius: 14px;
-    padding: 18px 18px 16px;
-    display:flex;
-    flex-direction:column;
-    gap: 10px;
-    height: 280px;
-    width: 100%;
-    min-width: 0;        
-    box-sizing: border-box;
+.EmpresasCertificadasPagina .card {
+  background: #ffffff;
+  border: 1px solid #e2e6e2;
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 280px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
-.EmpresasCertificadasPagina .card-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    min-width: 0;
+
+.EmpresasCertificadasPagina .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 0;
 }
 
 /* Logo maior */
-.EmpresasCertificadasPagina .logo-badge{
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight: 700;
-    font-size: 17px;
-    color:#ffffff;
-    letter-spacing: .3px;
-    
-    flex-shrink: 0;
+.EmpresasCertificadasPagina .logo-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffffff;
+  letter-spacing: .3px;
+
+  flex-shrink: 0;
 }
 
-.EmpresasCertificadasPagina .logo-badge img{
-    width: 100px;
-    height: 80px;
-    margin-left: 20px;
-    object-fit: contain;
-    padding: 7px;
+.EmpresasCertificadasPagina .logo-badge img {
+  width: 100px;
+  height: 80px;
+  margin-left: 20px;
+  object-fit: contain;
+  padding: 7px;
 }
 
-.EmpresasCertificadasPagina .cert{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    background: #e7f5ea;
-    color: #1f6b3a;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 999px;
-    flex-shrink: 0;
-}
-.EmpresasCertificadasPagina .cert i{ font-size:11px; }
-
-.EmpresasCertificadasPagina .card h3{
-    margin: 2px 0 0;
-    font-size: 16.5px;
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
-}
-.EmpresasCertificadasPagina .card .sector{
-    margin:0;
-    font-size: 13px;
-    color: #6b756c;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
+.EmpresasCertificadasPagina .cert {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #e7f5ea;
+  color: #1f6b3a;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
 }
 
-.EmpresasCertificadasPagina .badges{
-    display:flex;
-    gap:14px;
-    margin: 2px 0 2px;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    min-width: 0;
+.EmpresasCertificadasPagina .cert i {
+  font-size: 11px;
 }
-.EmpresasCertificadasPagina .badge-item{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    font-size: 12.5px;
-    color: #6b756c;
-    white-space: nowrap;
-}
-.EmpresasCertificadasPagina .badge-item i{ font-size:13px; color: #2f8f4e; }
 
-.EmpresasCertificadasPagina .stars{
-    display:flex;
-    gap:3px;
-    margin-bottom: 6px;
-    font-size: 14px;
+.EmpresasCertificadasPagina .card h3 {
+  margin: 2px 0 0;
+  font-size: 16.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
+
+.EmpresasCertificadasPagina .card .sector {
+  margin: 0;
+  font-size: 13px;
+  color: #6b756c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.EmpresasCertificadasPagina .badges {
+  display: flex;
+  gap: 14px;
+  margin: 2px 0 2px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.EmpresasCertificadasPagina .badge-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  color: #6b756c;
+  white-space: nowrap;
+}
+
+.EmpresasCertificadasPagina .badge-item i {
+  font-size: 13px;
+  color: #2f8f4e;
+}
+
+.EmpresasCertificadasPagina .stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
 .EmpresasCertificadasPagina .stars .fa-star,
-.EmpresasCertificadasPagina .stars .fa-star-half-stroke{ color: #f0b429; }
-.EmpresasCertificadasPagina .stars .fa-regular.fa-star{ color: #dfe3df; }
-
-.EmpresasCertificadasPagina .details-btn{
-    margin-top: auto;
-    width:100%;
-    padding: 10px 0;
-    border-radius: 10px;
-    border: 1.5px solid #1f6b3a;
-    background: transparent;
-    color: #1f6b3a;
-    font-weight: 600;
-    font-size: 14px;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:6px;
-    transition: background .15s ease, color .15s ease;
+.EmpresasCertificadasPagina .stars .fa-star-half-stroke {
+  color: #f0b429;
 }
-.EmpresasCertificadasPagina .details-btn:hover{
-    background: #1f6b3a;
-    color:#ffffff;
-}
-.EmpresasCertificadasPagina .details-btn i{ font-size:12px; }
 
-.EmpresasCertificadasPagina .empty{
-    grid-column: 1 / -1;
-    text-align:center;
-    padding: 60px 20px;
-    color: #6b756c;
-    font-size: 15px;
+.EmpresasCertificadasPagina .stars .fa-regular.fa-star {
+  color: #dfe3df;
+}
+
+.EmpresasCertificadasPagina .details-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1.5px solid #1f6b3a;
+  background: transparent;
+  color: #1f6b3a;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background .15s ease, color .15s ease;
+}
+
+.EmpresasCertificadasPagina .details-btn:hover {
+  background: #1f6b3a;
+  color: #ffffff;
+}
+
+.EmpresasCertificadasPagina .details-btn i {
+  font-size: 12px;
+}
+
+.EmpresasCertificadasPagina .empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b756c;
+  font-size: 15px;
+}
+
+.banner-sobre {
+  height: 320px;
+
+}
+
+.text-sobrenos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.banner-sobre {
+  display: flex;
+  align-items: center;
+}
+
+.banner-sobre img {
+  width: 519px;
+  height: 180px;
+  position: relative;
+  right: 150px;
+}
+
+.text-sobrenos p {
+  font-weight: 400;
+}
+
+.nossos-pilares {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.banner-pilares {
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-pilares h2 {
+  color: #1B2A17;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner-pilar {
+  background-color: #fff;
+  width: 300px;
+  height: 112px;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #0000005e;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.texto-pilar {
+  display: flex;
+  gap: 8px;
+}
+
+.texto-pilar h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4B6B3B;
+}
+
+.banner-pilar p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.texto-pilar i {
+  color: #4B6B3B;
+  font-size: 14px;
+}
+
+.banners-nossa-equipe {
+  padding: 34px 50px;
+  
+}
+
+.banners-nossa-equipe h2 {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b2b1b;
+}
+
+.div-nossa-equipe {
+  display: flex;
+  gap: 10px;
+}
+
+
+.banner-nossa-equipe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 310px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px #0000005e;
+}
+
+.avatar-nossa-equipe {
+  flex-shrink: 0;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #c5e1a5;
+}
+
+.avatar-nossa-equipe img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-nossa-equipe h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b2b1b;
+}
+
+.texto-nossa-equipe p {
+  margin: 0;
+  font-size: 16px;
+  color: #4a7c3a;
+}
+
+.login-pagina {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: #f1f8ef;
+  color: #1b2b1b;
+}
+
+.login-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(11, 61, 30, 0.15);
+}
+
+.login-card *,
+.login-card *::before,
+.login-card *::after { box-sizing: border-box; }
+
+/* ---------- Lado esquerdo ---------- */
+.login-lado-esquerdo {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 36px 28px;
+  background: #eef7ec;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0b3d1e;
+}
+.login-logo i { color: #7cc576; font-size: 24px; }
+
+.login-slogan { margin: 0 0 14px; font-size: 14px; }
+
+.login-titulo {
+  margin: 0 0 14px;
+  max-width: 300px;
+  font-size: 18px;
+  line-height: 1.35;
+  color: #0b3d1e;
+}
+
+.login-descricao { margin: 0; max-width: 240px; font-size: 12px; line-height: 1.5; }
+
+.login-ilustracao {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 190px;
+  margin: 12px 0;
+}
+.login-ilustracao .fa-earth-americas { font-size: 130px; color: #8fc98a; }
+.login-ilustracao .fa-shield-halved {
+  position: absolute;
+  font-size: 70px;
+  color: #2e7d32;
+  transform: translate(34px, 26px);
+  filter: drop-shadow(0 4px 6px rgba(11, 61, 30, 0.3));
+}
+
+.login-selos {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.login-selos li { display: flex; align-items: center; gap: 6px; }
+.login-selos li + li { padding-left: 10px; border-left: 1px solid #b7dfb2; }
+.login-selos i { color: #2e7d32; font-size: 14px; }
+
+/* ---------- Lado direito ---------- */
+.login-lado-direito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 36px 32px;
+}
+
+.login-chamada { margin: 0 0 20px; font-size: 13px; line-height: 1.5; color: #0b3d1e; }
+
+.login-lado-direito label {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0b3d1e;
+}
+
+/* Perfil opcional */
+.login-perfil {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px dashed #b7dfb2;
+  border-radius: 10px;
+}
+.login-perfil legend { padding: 0 6px; font-size: 11px; color: #2e7d32; }
+
+.login-lado-direito .login-foto-botao { margin: 0; cursor: pointer; }
+.login-foto-previa {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e3f1e0;
+  color: #2e7d32;
+  font-size: 18px;
+  border: 2px solid #b7dfb2;
+}
+.login-foto-previa img { width: 100%; height: 100%; object-fit: cover; }
+
+.login-perfil-nome { flex: 1; }
+.login-perfil-nome input {
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  font: inherit;
+  font-size: 12px;
+  border: 1px solid #b7dfb2;
+  border-radius: 6px;
+}
+
+/* Campos */
+.login-campo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  border: 1px solid #b7dfb2;
+  border-radius: 8px;
+  color: #7cc576;
+}
+.login-campo:focus-within { border-color: #2e7d32; box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15); }
+.login-campo input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  color: #1b2b1b;
+}
+.login-campo input::placeholder { color: #b7dfb2; }
+
+.login-olho { border: 0; background: none; padding: 0; color: #7cc576; cursor: pointer; }
+
+/* Opções */
+.login-opcoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 11px;
+}
+.login-lado-direito .login-lembrar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-weight: 400;
+  color: #1b2b1b;
+}
+.login-opcoes a { color: #0b3d1e; text-decoration: none; }
+
+.login-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 11px;
+  color: #2e7d32;
+  cursor: pointer;
+}
+
+.login-erro { min-height: 18px; margin: 0 0 8px; font-size: 12px; color: #b3261e; }
+
+/* Botão */
+.login-botao-entrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 8px;
+  background: #0b3d1e;
+  color: #fff;
+  cursor: pointer;
+}
+.login-botao-entrar:hover { background: #0f5128; }
+
+.login-cadastro { margin: 20px 0 24px; text-align: center; font-size: 12px; color: #7cc576; }
+.login-cadastro a { color: #2e7d32; font-weight: 700; text-decoration: none; }
+
+/* Aviso */
+.login-aviso {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #e3f1e0;
+  font-size: 11px;
+  color: #2e7d32;
+}
+.login-aviso i { margin-top: 2px; font-size: 14px; }
+.login-aviso strong { color: #0b3d1e; }
+.login-aviso p { margin: 2px 0 0; }
+
+.login-card :focus-visible { outline: 2px solid #2e7d32; outline-offset: 2px; }
+
+
+/* ---------- Perfil no canto inferior do menu ---------- */
+/* O perfil fica logo abaixo do card de cima, com um espaço entre eles.
+   Para subir ou descer, mude o valor de margin-top. */
+.layout-nav > .perfil-nav { margin-top: 28px; }
+
+.perfil-nav,
+.perfil-nav * { box-sizing: border-box; }
+
+/* Card do perfil */
+.perfil-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.perfil-card {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Foto */
+.perfil-avatar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #c5e1a5;
+  color: #2e7d32;
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+}
+.perfil-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.perfil-avatar-grande { width: 84px; height: 84px; font-size: 30px; border-color: #b7dfb2; }
+
+/* Nome (branco) e e-mail (cinza) */
+.perfil-dados {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.2;
+}
+.perfil-dados strong {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.perfil-dados span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #b8c7b8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Ícones alinhados e do mesmo tamanho */
+.perfil-acoes {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.perfil-acoes button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #d3ddd3;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.perfil-acoes button i { display: block; width: 1em; text-align: center; }
+.perfil-acoes button:hover { color: #ffffff; background: rgba(255, 255, 255, 0.18); }
+.perfil-acoes button:focus-visible { outline: 2px solid #ffffff; outline-offset: 1px; }
+
+/* ---------- Modal de edição ---------- */
+.perfil-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(11, 61, 30, 0.55);
+}
+.perfil-modal[hidden] { display: none; }
+
+.perfil-modal-caixa {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  border-radius: 14px;
+  background: #fff;
+  color: #1b2b1b;
+  font-family: "Roboto", Arial, sans-serif;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+.perfil-modal-caixa h2 { margin: 0 0 18px; font-size: 20px; color: #0b3d1e; }
+.perfil-modal-caixa > label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 700; color: #0b3d1e; }
+.perfil-modal-caixa input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  font: inherit;
+  border: 1px solid #b7dfb2;
+  border-radius: 8px;
+}
+
+.perfil-modal-foto { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.perfil-modal-botoes { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+
+.perfil-btn-prim,
+.perfil-btn-sec {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.perfil-btn-prim { border: 0; background: #0b3d1e; color: #fff; }
+.perfil-btn-prim:hover { background: #0f5128; }
+.perfil-btn-sec { border: 1px solid #0b3d1e; background: #fff; color: #0b3d1e; }
+.perfil-btn-sec:hover { background: #eef7ec; }
+
+.perfil-btn-link { border: 0; background: none; padding: 0; font: inherit; font-size: 12px; color: #2e7d32; cursor: pointer; text-decoration: underline; }
+
+.perfil-erro { min-height: 18px; margin: 8px 0 0; font-size: 12px; color: #b3261e; }
+
+.perfil-modal-rodape { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 12px; }
+.perfil-modal-rodape > div { display: flex; gap: 8px; }
+
+@media (max-width: 480px) {
+  .perfil-modal-rodape { flex-direction: column-reverse; align-items: stretch; }
+  .perfil-modal-rodape > div { justify-content: flex-end; }
 }
